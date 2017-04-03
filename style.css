@@ -1,0 +1,46 @@
+html{
+	box-sizing: border-box;
+}
+
+*, *:after, *:before {
+	box-sizing: inherit;
+}
+
+body{
+	background: rgba(173,216,230, 0.5);
+}
+
+.countdownContainer{
+	border: 1px solid navy;
+
+	display: flex;	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#countDown{
+	display: flex;
+}
+
+#countDown > * {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+
+	width: 60px;
+	height: 60px;
+	margin: 10px;
+	border: 2px solid navy;
+	border-radius: 10px;
+	box-shadow: 5px 3px 8px rgba(0, 0, 0, 0.5);
+	background: rgba(10, 65, 216, 0.5);
+	font-size: 26px;
+	font-weight: bold;	
+	letter-spacing: 3px;
+	color: #fff
+}
+
+
+
+
