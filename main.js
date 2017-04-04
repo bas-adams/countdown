@@ -55,7 +55,7 @@
 	}
 
 	function checkEnd(checkDate){
-   	return (parseInt(checkDate.textContent) < 0) ? checkDate.textContent = 0 : checkDate.textContent;;
+   	return ((parseInt(checkDate.textContent) == 0) ? checkDate.textContent = '00' : checkDate.textContent) ;
    }
 
 	function initializing(){
@@ -66,7 +66,7 @@
 				countSecond = doc.querySelector('.countSecond');
 		
 				function updateing(){
-					var time = counting(2017, 03, 4);
+					var time = counting(2017, 03, 5);
 
 					countDay.textContent = ` ${loadingZero(Math.floor(time.days))}  `;
 					countHour.textContent = ` ${loadingZero(Math.floor(time.hours))}  `;
